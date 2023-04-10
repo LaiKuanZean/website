@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>期中專案</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<script>
+    window.onload = function test() {
+        move1();
+        move2();
+        move3();
+        move4();
+    }
+    function move1() {
+        var ans = document.getElementById("file1");
+        var value = 1;
+        var num = document.getElementById("schedule1");
+        var id = setInterval(frame, 40);
+        function frame() {
+            if (value >= 40) {
+                clearInterval(id);
+            }
+            else {
+                value++;
+                ans.value = value;
+                num.innerHTML = value + "%";
+            }
+        }
+    }
+</script>
+<script>
+
+    function move2() {
+        var ans = document.getElementById("file2");
+        var value = 1;
+        var num = document.getElementById("schedule2");
+        var id = setInterval(frame, 40);
+        function frame() {
+            if (value >= 30) {
+                clearInterval(id);
+            }
+            else {
+                value++;
+                ans.value = value;
+                num.innerHTML = value + "%";
+            }
+        }
+    }
+</script>
+<script>
+
+    function move3() {
+        var ans = document.getElementById("file3");
+        var value = 1;
+        var num = document.getElementById("schedule3");
+        var id = setInterval(frame, 40);
+        function frame() {
+            if (value >= 35) {
+                clearInterval(id);
+            }
+            else {
+                value++;
+                ans.value = value;
+                num.innerHTML = value + "%";
+            }
+        }
+    }
+</script>
+<script>
+ 
+    function move4() {
+        var ans = document.getElementById("file4");
+        var value = 1;
+        var num = document.getElementById("schedule4");
+        var id = setInterval(frame, 40);
+        function frame() {
+            if (value >= 50) {
+                clearInterval(id);
+            }
+            else {
+                value++;
+                ans.value = value;
+                num.innerHTML = value + "%";
+            }
+        }
+    }
+</script>
+
+<body>
+    <header>
+        <h1 style="line-height: 50px">MY RESUME<br></h1>
+            <h1 class="text">LAI KUAN ZEAN</h1>
+            <a href="https://www.facebook.com/"><img class="logo1" src="image/fb.png" ></a>
+            <a href="https://www.instagram.com/"><img class="logo2" src="image/ig.png" ></a>
+            <a href="mailto:jenny.lai2003@gmail.com"><img class="logo3" src="image/gmail.png" ></a>
+            
+          
+            <hr>
+    </header>    
+        <nav>
+            <a href="#personal">PERSONAL</a>
+            <a href="#slogan">SLOGAN</a>
+            <a href="#skill">SKILL</a>
+            <a href="#experience">EXPERIENCE</a>
+            <a href="#project">PROJECT</a>
+        </nav>
+    
+
+    <section class="per">
+        <h2><a id="personal">PERSONAL</a></h2>
+        <img  class="pic" src="image/personal.jpg" style="border-radius: 50%;" />
+        <p class="text1">
+        個性:內向安靜<br>
+        優點:熱心助人<br>
+        缺點:懶惰<br>
+        專長:吹長笛<br>
+        興趣:游泳<br>
+        偶像:泰勒絲<br>
+        學習經歷:<br>
+        西苑高中國中部<br>
+        立人高中<br>
+        中原大學<br>
+        </p>
+        <img class="sch school1" src="image/school1.jpg" >
+        <img class="sch school2" src="image/school2.jpg" >
+        <img class="sch school3" src="image/school3.jpg" >
+        
+        
+    </section>
+    <section class="slo">
+        <h2><a id="slogan">SLOGAN</a></h2>
+        <div class="box">
+            <div class="animate">
+                <p>學會和尷尬相處。</p>
+                <p>尷尬總會發生，如果它總是存在又何必逃避它呢?</p>
+                <p>Learn to live alongside cringe.No matter</p>
+                <p>how hard you try to avoid being cringe,</p>
+                <p>you will look back on your life and cringe</p>
+                <p> retrospectively. — by Taylor Swift</p>
+            </div>
+        </div>
+    </section>
+    <section class="ski">
+        <h2><a id="skill">SKILL</a></h2>
+         <p class="text4">Python</p>
+         <div class="array_item1">
+            <progress id="file1" max="100" value="1"> </progress>
+            <p id="schedule1">1%</p>
+        </div>
+        <p class="text4">Java</p>
+        <div class="array_item2">
+            <progress id="file2" max="100" value="1"> </progress>
+            <p id="schedule2">1%</p>
+        </div>
+        <p class="text4">CSS</p>
+        <div class="array_item3">
+            <progress id="file3" max="100" value="1"> </progress>
+            <p id="schedule3">1%</p>
+        </div>
+        <p class="text4">HTML</p>
+        <div class="array_item4">
+            <progress id="file4" max="100" value="1"> </progress>
+            <p id="schedule4">1%</p>
+        </div>
+
+    </section>
+    <section class="ex">
+        <h2><a id="experience">EXPERIENCE</a></h2>
+        <p class="text5 slide">高中簡報比賽</p>
+        <div class="slider_container">
+            <div>
+                <img src="image/slide.jpg" class="img" />
+                <span class="info">經過多次的比賽最後才闖到這一關，當時犧牲午睡的時間每天去電腦教室練習，現在看來一切都值得了!</span>
+            </div>
+            <div>
+                <img src="image/slide2.jpg" class="img"/>
+                <span class="info">經過多次的比賽最後才闖到這一關，當時犧牲午睡的時間每天去電腦教室練習，現在看來一切都值得了!</span>
+            </div>
+        </div>
+        <p class="text5 essay">高中小論文比賽</p>
+        <div class="slider_container1 essay" >
+            <div>
+                <img src="image/essay.jpg" class="img">
+                <span class="info">跟夥伴們討論關於無人商店的應用並做成小論文，在找資料的時候也學習了不少事物，非常有趣</span>
+            </div>
+        </div>
+        <p class="text5 club">高中社團活動</p>
+        <div class="slider_container1 club">
+            <div>
+                <img src="image/club.jpg" class="img">
+                <span>高一時沒麼興趣的我跟著朋友去了流行時尚社，但高二時因好奇進入的電腦研習社後，加深了我對程式語言的喜歡</span>
+            </div>
+        </div>
+        <p class="text5 club2">大學社團活動</p>
+        <div class="slider_container1 club2">
+            <div>
+                <img src="image/club2.jpg" class="img">
+                <span>大學參加的吉他社，參加吉他社的初衷是想學吉他但也意外地認識新朋友並一起參加了比賽，真的是很特別的體驗</span>
+            </div>
+        </div>
+    </section>
+    <section class="pro">
+        <h2><a id="project">PROJECT</a></h2>
+        <p class="text5 mana">大一上管理學</p>
+        <div class="slider_container manage">
+            <div>
+                <img src="image/project3.jpg" class="img" />
+                <span class="info">藉由管理學的服務學習課程和同學們一起去淨灘了解海洋被汙染的嚴重性，也一起做企劃去分享海洋的重要</span>
+            </div>
+            <div>
+                <img src="image/project5.jpg" class="img"/>
+                <span class="info">藉由管理學的服務學習課程和同學們一起去淨灘了解海洋被汙染的嚴重性，也一起做企劃去分享海洋的重要</span>
+            </div>
+        </div>
+        <p class="text5 com">大一下企業概論</p>
+        <div class="slider_container company">
+            <div>
+                <img src="image/project.jpg" class="img" />
+                <span class="info">這次的專案交會我們企業的運作和團隊合作的重要性，經過每一次的開會討論真的學習到很多</span>
+            </div>
+            <div>
+                <img src="image/project1.jpg" class="img"/>
+                <span class="info">這次的專案交會我們企業的運作和團隊合作的重要性，經過每一次的開會討論真的學習到很多</span>
+            </div>
+        </div>
+        <p class="text5 we">大二上網程專案</p>
+        <div class="slider_container1 web">
+            <div>
+                <img src="image/project4.jpg" class="img">
+                <span>這個專案真的非常的困難和繁瑣，和伙伴們通宵寫程式也是非常過癮</span>
+            </div>
+        </div>
+
+    </section>
+    <footer>
+        <h5>Copyrgiht @ 2023 All rights reserved</h5>
+      </footer>
+</body>
+</html>
